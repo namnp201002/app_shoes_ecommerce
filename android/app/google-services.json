@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964377082915",
+    "project_id": "app-shoes-ecom",
+    "storage_bucket": "app-shoes-ecom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964377082915:android:1673221012965edfbd4596",
+        "android_client_info": {
+          "package_name": "com.example.app_shoes_ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuMSt9i7cEjPc0FJxRnR-3TNMjrFaK318"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
