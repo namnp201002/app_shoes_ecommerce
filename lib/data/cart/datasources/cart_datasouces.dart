@@ -18,9 +18,11 @@ class CartDataSourceImpl implements CartDatasource {
   }
 
   @override
-  Future<List<LineItemEntity>> getAllItemsInCart(CartParams cartParams) async {
+  Future<List<LineItemModel>> getAllItemsInCart(CartParams cartParams) async {
+    print('CartDatasource: GET ALL ITEMS IN CART');
     final response = await apiProvider.get(endPoint: '/carts/${cartParams.id}');
-    return (response.data['line_items'] as List)
+    // print(response.data['line_items']);
+    return (response.data['line_items'] as List<dynamic>)
         .map((e) => LineItemModel.fromJson(e))
         .toList();
   }

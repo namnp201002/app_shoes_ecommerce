@@ -3,48 +3,66 @@ import 'package:app_shoes_ecommerce/presentation/cart/widget/icon_box_widget.dar
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class QuantityControlWidget extends StatelessWidget {
+class QuantityControlWidget extends StatefulWidget {
+  final int quantity;
   final void Function()? incrementTap;
   final void Function()? decrementTap;
 
   const QuantityControlWidget(
-      {super.key, required this.incrementTap, required this.decrementTap});
+      {super.key,
+      required this.quantity,
+      required this.incrementTap,
+      required this.decrementTap});
 
+  @override
+  State<QuantityControlWidget> createState() => _QuantityControlWidgetState();
+}
+
+class _QuantityControlWidgetState extends State<QuantityControlWidget> {
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         InkWell(
-          onTap: decrementTap,
+          onTap: widget.quantity > 1 ? widget.decrementTap : null,
           child: IconBoxWidget(
               radius: 2,
               isSelected: false,
-              padding: 10,
+              padding: 5,
               icon: SvgPicture.asset(
-                  '${AssetPath.iconPath}ic_baseline-minus.svg')),
+                '${AssetPath.iconPath}ic_baseline-minus.svg',
+                colorFilter: widget.quantity == 1
+                    ? const ColorFilter.mode(Colors.grey, BlendMode.srcIn)
+                    : null,
+              )),
         ),
         const SizedBox(
           width: 5,
         ),
-        const IconBoxWidget(
+        IconBoxWidget(
             radius: 2,
             isSelected: true,
-            padding: 10,
-            icon: Text(
-              '10',
-              style: TextStyle(color: Colors.white),
+            padding: 5,
+            icon: Center(
+              child: Text(
+                widget.quantity.toString(),
+                style: const TextStyle(color: Colors.white, fontSize: 12),
+              ),
             )),
         const SizedBox(
           width: 5,
         ),
         InkWell(
-          onTap: incrementTap,
+          onTap: widget.incrementTap,
           child: IconBoxWidget(
               radius: 2,
               isSelected: false,
-              padding: 10,
-              icon:
-                  SvgPicture.asset('${AssetPath.iconPath}ic_outline-plus.svg')),
+              padding: 5,
+              icon: SvgPicture.asset(
+                '${AssetPath.iconPath}ic_outline-plus.svg',
+                colorFilter:
+                    const ColorFilter.mode(Colors.black, BlendMode.srcIn),
+              )),
         )
       ],
     );

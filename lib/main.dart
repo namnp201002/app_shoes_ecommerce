@@ -1,17 +1,22 @@
+import 'package:app_shoes_ecommerce/core/network/api_provider.dart';
 import 'package:app_shoes_ecommerce/core/network/api_provider_impl.dart';
 import 'package:app_shoes_ecommerce/core/theme/bloc/theme_bloc.dart';
 import 'package:app_shoes_ecommerce/core/theme/theme_service.dart';
 import 'package:app_shoes_ecommerce/core/utilities/router.dart';
+import 'package:app_shoes_ecommerce/data/cart/datasources/cart_datasouces.dart';
+import 'package:app_shoes_ecommerce/data/cart/repository/cart_repository_impl.dart';
 import 'package:app_shoes_ecommerce/data/product/datasources/product_datasource.dart';
 import 'package:app_shoes_ecommerce/data/product/repository/product_repository_impl.dart';
+import 'package:app_shoes_ecommerce/domain/cart/usecases/get_all_items_in_cart_usecase.dart';
 import 'package:app_shoes_ecommerce/domain/product/usecases/get_all_product_usecase.dart';
 import 'package:app_shoes_ecommerce/domain/product/usecases/get_product_usecase.dart';
+import 'package:app_shoes_ecommerce/presentation/cart/bloc/cart_bloc.dart';
 // import 'package:app_shoes_ecommerce/firebase_options.dart';
 import 'package:app_shoes_ecommerce/presentation/home/bloc/bottom_navigation_bar_bloc.dart';
 import 'package:app_shoes_ecommerce/presentation/home/pages/layout.dart';
 import 'package:app_shoes_ecommerce/presentation/login/bloc/login_bloc.dart';
 import 'package:app_shoes_ecommerce/presentation/product/bloc/product_bloc.dart';
-import 'package:app_shoes_ecommerce/presentation/product/bloc/product_detail_bloc.dart';
+import 'package:app_shoes_ecommerce/presentation/product/bloc/product_detail/product_detail_bloc.dart';
 // import 'package:app_shoes_ecommerce/presentation/login/pages/login_page.dart';
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -44,14 +49,16 @@ class MyApp extends StatelessWidget {
                         apiProvider: APIProviderImpl()))))),
         BlocProvider(
             create: (context) => ProductBloc(
-                GetAllProductUseCase(
-                    productRepository: ProductRepositoryImpl(
-                        productDatasource: ProductDatasourceImpl(
-                            apiProvider: APIProviderImpl()))),
-                GetProductUsecase(
-                    productRepository: ProductRepositoryImpl(
-                        productDatasource: ProductDatasourceImpl(
-                            apiProvider: APIProviderImpl())))))
+                  GetAllProductUseCase(
+                      productRepository: ProductRepositoryImpl(
+                          productDatasource: ProductDatasourceImpl(
+                              apiProvider: APIProviderImpl()))),
+                )),
+        BlocProvider(
+            create: (context) => CartBloc(GetAllItemsInCartUsecase(
+                cartRepository: CartRepositoryImpl(
+                    cartDataSourceImpl:
+                        CartDataSourceImpl(apiProvider: APIProviderImpl())))))
       ],
       child: BlocBuilder<ThemeBloc, ThemeState>(
         builder: (context, state) {

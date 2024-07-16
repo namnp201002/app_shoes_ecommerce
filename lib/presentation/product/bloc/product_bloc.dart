@@ -12,10 +12,8 @@ part 'product_state.dart';
 
 class ProductBloc extends Bloc<ProductEvent, ProductState> {
   final GetAllProductUseCase getAllProductUseCase;
-  final GetProductUsecase getProductUsecase;
 
-  ProductBloc(this.getAllProductUseCase, this.getProductUsecase)
-      : super(ProductInitialState()) {
+  ProductBloc(this.getAllProductUseCase) : super(ProductInitialState()) {
     on<GetAllProductsHomeEvent>(_onGetAllProduct);
   }
 

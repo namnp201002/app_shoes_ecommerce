@@ -11,8 +11,7 @@ class GetAllItemsInCartUsecase
   GetAllItemsInCartUsecase({required this.cartRepository});
 
   @override
-  Future<Either<Failure, List<LineItemEntity>>> call(CartParams params) {
-    cartRepository.getAllItemsInCart(params);
-    throw UnimplementedError();
+  Future<Either<Failure, List<LineItemEntity>>> call(CartParams params) async {
+    return cartRepository.getAllItemsInCart(params);
   }
 }

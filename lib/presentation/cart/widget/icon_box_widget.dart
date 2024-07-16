@@ -15,9 +15,11 @@ class IconBoxWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        width: 25,
         decoration: BoxDecoration(
           color: isSelected ? Colors.black : null,
-          border: Border.all(color: isSelected ? Colors.black : Colors.grey),
+          border: Border.all(
+              color: isSelected ? Colors.black : Colors.grey, width: 0.1),
           borderRadius: BorderRadius.circular(radius ?? 10),
         ),
         child: Padding(padding: EdgeInsets.all(padding ?? 10), child: icon));

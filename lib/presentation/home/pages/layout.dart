@@ -33,8 +33,8 @@ class _LayoutState extends State<Layout> {
                 case 0:
                   BlocProvider.of<BottomNavigationBarBloc>(context)
                       .add(LoadHome());
-                  BlocProvider.of<ProductBloc>(context)
-                      .add(GetAllProductsHomeEvent());
+                  // BlocProvider.of<ProductBloc>(context)
+                  //     .add(GetAllProductsHomeEvent());
                   break;
                 case 1:
                   BlocProvider.of<BottomNavigationBarBloc>(context)

@@ -26,7 +26,7 @@ class LineItemModel extends LineItemEntity {
         productId: json['product_id'],
         name: json['name'],
         productName: json['product_name'],
-        sku: json['sku'],
+        sku: json['sku'] ?? '',
         permalink: json['permalink'],
         quantity: json['quantity'],
         price: PriceModel.fromJson(json['price']),

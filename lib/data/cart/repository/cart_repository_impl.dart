@@ -14,10 +14,9 @@ class CartRepositoryImpl implements CartRepository {
       CartParams cartParams) async {
     try {
       final data = await cartDataSourceImpl.getAllItemsInCart(cartParams);
-      right(data);
+      return right(data);
     } catch (err) {
-      left(ErrorHandler.handle(err).failure);
+      return left(ErrorHandler.handle(err).failure);
     }
-    throw UnimplementedError();
   }
 }
