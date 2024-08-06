@@ -5,6 +5,11 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+| Error Screen |
+| -------------|
+| ![Screenshot_20240806_154114](https://github.com/user-attachments/assets/e297fb6f-4142-4d4d-9c07-8a81db70444f) |
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
