@@ -16,9 +16,10 @@ This app follow clean architecture proposed By Uncle Bob I used BloC as state ma
 |:----------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:|:-------------:|
 | ![cart_page](https://github.com/user-attachments/assets/ad180b68-e68d-419e-9c98-f5d4170debab) | ![edit_product_cart](https://github.com/user-attachments/assets/853c401c-896b-4cf2-a491-874f972f3469) | ![delete_product_cart](https://github.com/user-attachments/assets/fd51b1d3-4d1c-4872-9ea6-95c114b02195) | ![edit_profile](https://github.com/user-attachments/assets/6a71bd1d-007d-4c93-82fd-8834b0cb096f) | ![language_select](https://github.com/user-attachments/assets/c5b356b8-373c-4f29-bafe-2d621080b119) |
 
+
 | Profile (Vi Lang)  | Dark Theme |
 | :--: | :--: |
-| ![vi_language](https://github.com/user-attachments/assets/48f90e3b-f5a8-4648-bc82-1dc3c5a3028f)  | ![dark_theme](https://github.com/user-attachments/assets/ea92ad3e-0050-4949-860d-70431a1ad7a8) |
+| <img src="https://github.com/user-attachments/assets/48f90e3b-f5a8-4648-bc82-1dc3c5a3028f" alt="infinite_loading" width="200">  | <img src="https://github.com/user-attachments/assets/ea92ad3e-0050-4949-860d-70431a1ad7a8" alt="infinite_loading" width="200"> |
 
 
 ## App Features
