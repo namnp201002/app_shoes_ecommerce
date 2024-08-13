@@ -9,21 +9,15 @@ This app follow clean architecture proposed By Uncle Bob I used BloC as state ma
 
 | Infinite Loading | Product Detail Screen(1) | Product Detail Screen(2) | Add To Cart | Loading Add To Cart|
 | --- | --- | --- | --- | --- |
-| ![infinite_loading](https://github.com/user-attachments/assets/4b172b11-9154-456e-8356-68d7faf0d68b) | ![product_detail_1](https://github.com/user-attachments/assets/3819f46a-f166-481b-88ab-75ef82a55293) |
-![product_detail_2](https://github.com/user-attachments/assets/cb1d1673-3b3f-4dbb-9925-e43877d63094) | ![add_product_to_cart](https://github.com/user-attachments/assets/de394c82-46c7-495f-95c9-5f57ffea834a) | 
-![loading_add_to_cart](https://github.com/user-attachments/assets/507dc8c5-2ad3-4030-bb90-9c3438c5d3d7) |
+| ![infinite_loading](https://github.com/user-attachments/assets/4b172b11-9154-456e-8356-68d7faf0d68b) | ![product_detail_1](https://github.com/user-attachments/assets/3819f46a-f166-481b-88ab-75ef82a55293) | ![product_detail_2](https://github.com/user-attachments/assets/cb1d1673-3b3f-4dbb-9925-e43877d63094) | ![add_product_to_cart](https://github.com/user-attachments/assets/de394c82-46c7-495f-95c9-5f57ffea834a) | ![loading_add_to_cart](https://github.com/user-attachments/assets/507dc8c5-2ad3-4030-bb90-9c3438c5d3d7) |
 
 | Cart Screen | Edit Product Cart | Delete Product Cart | Edit Profile Screen | Language Screen |
 | --- | --- | --- | --- | --- |
-|![cart_page](https://github.com/user-attachments/assets/ad180b68-e68d-419e-9c98-f5d4170debab) |
-![edit_product_cart](https://github.com/user-attachments/assets/853c401c-896b-4cf2-a491-874f972f3469) | ![delete_product_cart](https://github.com/user-attachments/assets/fd51b1d3-4d1c-4872-9ea6-95c114b02195) |
-![edit_profile](https://github.com/user-attachments/assets/6a71bd1d-007d-4c93-82fd-8834b0cb096f) |
-![language_select](https://github.com/user-attachments/assets/c5b356b8-373c-4f29-bafe-2d621080b119) |
+| ![cart_page](https://github.com/user-attachments/assets/ad180b68-e68d-419e-9c98-f5d4170debab) | ![edit_product_cart](https://github.com/user-attachments/assets/853c401c-896b-4cf2-a491-874f972f3469) | ![delete_product_cart](https://github.com/user-attachments/assets/fd51b1d3-4d1c-4872-9ea6-95c114b02195) | ![edit_profile](https://github.com/user-attachments/assets/6a71bd1d-007d-4c93-82fd-8834b0cb096f) | ![language_select](https://github.com/user-attachments/assets/c5b356b8-373c-4f29-bafe-2d621080b119) |
 
  | Profile (Vi Lang)  | Dark Theme |
- |-- | --|
- | ![vi_language](https://github.com/user-attachments/assets/48f90e3b-f5a8-4648-bc82-1dc3c5a3028f) | 
-![dark_theme](https://github.com/user-attachments/assets/ea92ad3e-0050-4949-860d-70431a1ad7a8) |
+ | -- | -- |
+| ![vi_language](https://github.com/user-attachments/assets/48f90e3b-f5a8-4648-bc82-1dc3c5a3028f)  |  ![dark_theme](https://github.com/user-attachments/assets/ea92ad3e-0050-4949-860d-70431a1ad7a8) |
  
 
 
