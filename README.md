@@ -3,14 +3,16 @@ This app follow clean architecture proposed By Uncle Bob I used BloC as state ma
 
 ## Screenshots
 
-| Error Screen                                                                                                   | Login Screen                                                                                     | Sign Up Screen                                                                                      | Profile Screen                                                                                     |
-|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [![Screenshot_20240806_154114](https://github.com/user-attachments/assets/e297fb6f-4142-4d4d-9c07-8a81db70444f)](#) | [![login_screen](https://github.com/user-attachments/assets/39dcea04-e69c-4c73-b824-d8689c163a85)](#) | [![register_screen](https://github.com/user-attachments/assets/044fd34e-fa0f-45ae-947b-bf3a0017a606)](#) | [![profile_logged](https://github.com/user-attachments/assets/7beb253a-4777-4747-990e-872bafdb91bb)](#) |
+| Error Screen                                                                                                   | Login Screen                                                                                     | Sign Up Screen                                                                                      | Profile Screen                                                                                      | Home Screen |
+|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----|
+| ![Screenshot_20240806_154114](https://github.com/user-attachments/assets/e297fb6f-4142-4d4d-9c07-8a81db70444f) | ![login_screen](https://github.com/user-attachments/assets/39dcea04-e69c-4c73-b824-d8689c163a85) | ![register_screen](https://github.com/user-attachments/assets/044fd34e-fa0f-45ae-947b-bf3a0017a606) | ![profile_logged](https://github.com/user-attachments/assets/7beb253a-4777-4747-990e-872bafdb91bb)  | ![home_page](https://github.com/user-attachments/assets/4abf2e23-734d-4b05-a89d-e078c48a7147) |
 
 ## App Features
 * Authentication (Login/Register)
 * Products can be accessed in-app
-* Add products to your Cart
+* Add, Update, Delete product to Cart
+* Theme: Dark/Light mode 
+* Language: Supported English and Vietnamese
 * Updating...
 
 > [!NOTE]
@@ -28,7 +30,7 @@ This app follow clean architecture proposed By Uncle Bob I used BloC as state ma
    │  ├─ network
    │  ├─ secrets
    │  ├─ theme
-   │  ├─ usacase
+   │  ├─ usecase
    │  └─ utilities
    ├─ data
    │  ├─ cart
@@ -83,3 +85,7 @@ This app follow clean architecture proposed By Uncle Bob I used BloC as state ma
          └─ pages
 ```
 
+## .ENV
+- BASE_URL: `https://api.chec.io/v1/`
+- API_KEY: `.....`
+- FIREBASE: `.....`
